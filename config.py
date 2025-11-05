@@ -6,7 +6,7 @@ load_dotenv()
 
 class Config:
     """Base configuration"""
-    SECRET_KEY = os.getenv('SECRET_KEY', 'dev-secret-key-change-in-production')
+    SECRET_KEY = os.getenv('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # JWT Configuration
